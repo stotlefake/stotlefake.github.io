@@ -1,0 +1,6 @@
+include: ['_pages', '_redirect']
+plugins:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - jekyll-redirect-from
