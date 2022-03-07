@@ -1,0 +1,143 @@
+ul.ulnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+ul.ulnav li.ulnav {
+float: left;
+}
+
+ul.ulnav li.ulnav a.ulnav {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+ul.ulnav li.ulnav a.ulnav:hover {
+background-color: #111;
+}
+video {
+max-width: 100%;
+height: auto;
+}
+        
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+} */
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #333333;
+min-width: inherit;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+video {
+max-width: 100%;
+height: auto;
+}
+/*iframe {
+width: 100%;
+height: 100%;
+}*/
+apksnav.a {
+text-decoration: none;
+}
+.despair {
+    color:
+        aliceblue;
+    text-shadow: 
+        2px 2px 0 #222, 
+        4px 4px 0 #444, 
+        6px 6px 0 #666, 
+        8px 8px 0 #888, 
+        10px 10px 0 #aaa, 
+        12px 12px 0 #ccc, 
+        14px 14px 0 #eee,
+        -2px -2px 0 #222, 
+        -4px -4px 0 #444, 
+        -6px -6px 0 #666, 
+        -8px -8px 0 #888, 
+        -10px -10px 0 #aaa, 
+        -12px -12px 0 #ccc, 
+        -14px -14px 0 #eee
+    ;
+}
+.lag-echo {
+    text-shadow: 
+    1px 11px 0 #333,
+    2px 22px 1 #444,
+    3px 33px 2 #555,
+    4px 44px 3 #666,
+    5px 55px 4 #777,
+    6px 66px 5 #888,
+    7px 77px 6 #999,
+    8px 88px 7 #AAA,
+    9px 99px 8 #BBB;
+        
+}
+.abyssal {
+    text-shadow:
+        5px  10px 0 #333,
+        10px 20px 0 #666,
+        15px 30px 0 #999,
+        20px 40px 0 #ccc
+    ;
+}
+.rotate-10 {
+    transform: rotate(-10deg);
+    /* Legacy vendor prefixes that you probably don't need... */			
+    -webkit-transform: rotate(-10deg); /* Safari */
+    -moz-transform: rotate(-10deg); /* Firefox */		
+    -ms-transform: rotate(-10deg); /* IE */			
+    -o-transform: rotate(-10deg); /* Opera */			
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+}
+.rotate-180 {
+    transform: rotate(180deg);
+    /* Legacy vendor prefixes that you probably don't need... */			
+    -webkit-transform: rotate(180deg); /* Safari */
+    -moz-transform: rotate(180deg); /* Firefox */		
+    -ms-transform: rotate(180deg); /* IE */			
+    -o-transform: rotate(180deg); /* Opera */			
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+}

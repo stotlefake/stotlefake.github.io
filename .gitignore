@@ -1,2 +1,5 @@
-automation.py
+*.bak
+static/gameplay/webm/desktop.ini
+*.backup
 releases
+github-release-asset-batch-downloader.py
