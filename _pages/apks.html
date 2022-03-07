@@ -1,0 +1,52 @@
+---
+title: "APKs"
+permalink: /APKs
+layout: default
+---
+
+
+
+<h1 id="android">Android</h1>
+
+{% capture apks-md %}
+{% include apks.md %}
+{% endcapture %}
+{{ apks-md | markdownify }}
+
+<!-- <div><object data="/static/others/english.txt"></object></div> -->
+
+<ul>
+    {% for post in site.posts %}
+    <li><a class="apksnav" href="#{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<div class="posts">
+    {% for post in site.posts %}
+        {% if post.layout == "apk-post" %}
+            <br> 
+            <article class="post" id="{{ post.title }}">
+                
+                <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+
+                <div class="entry">
+                    <a href="{{ site.baseurl }}{{ post.url }}"><img style="max-width:100%;height:auto;" src="/static/images{{ post.url }}.jpg"></a><br>
+                    {{ post.excerpt }}...
+                </div>
+                <br>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More..</a>
+            </article>
+            <br>
+            <hr style="border: 5px dashed black; border-radius: 0px; color: black;">
+            <br>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script>
+  var idcomments_acct = '829ca40905e3bc316f791cf19c9fb2e1';
+  var idcomments_post_id;
+  var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
