@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<script src="https://arifhamed.github.io/static/js/font-awesome.js" integrity="sha512-Mizub3M5oexqKMz/zqTjVpAMAQN/URWJVT6FnZGrMTDJRRfexw/K6KoKzDWGzF53rtHw47KHMbGRqcgcEYEnhQ==" crossorigin="anonymous"></script>
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/static/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/static/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/static/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/static/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/static/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/static/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/static/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/static/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png">
+	<link rel="manifest" href="/static/icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/static/icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/site.css">
+	
+{% seo %}
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <!-- <div id="header_wrap" class="outer">
+        <header class="inner">
+          {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %}
+
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div> -->
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+	  
+	<section id="main_content" class="inner">
+	<!-- <ul class="ulnav">
+		<li class="ulnav"><a class="ulnav" href="/">home</a></li>
+		<li class="ulnav"><a class="ulnav" href="/about">about</a></li>
+		<li class="ulnav"><a class="ulnav" href="/guide-md">md</a></li>
+		<li class="ulnav"><a class="ulnav" href="/origami">origami</a></li>
+		<li class="ulnav"><a class="ulnav" href="/about-devices">my techs</a></li>
+		<li class="ulnav"><a class="ulnav" href="https://colab.research.google.com/github/arifhamed/arifhamed.github.io/blob/main/static/others/torrent_webseed_creator.ipynb" target="_blank">torrent</a></li>
+		<li class="ulnav dropdown">
+			<button class="dropbtn">games 
+			</button>
+			<div class="dropdown-content">
+				<a class="ulnav" href="/games/wordle">wordle</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+			  
+		</li>
+	</ul> -->
+
+	<!-- {% include nav.html %} -->
+	
+	{{ content }}
+	
+	</section>
+	</div>
+
+    <!-- FOOTER  -->
+    <!-- <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a><span style="color:#212121;"><a href="/APKs">.</a></span></p>
+      </footer>
+    </div> -->
+
+    <script src="/static/js/vanilla-back-to-top.min.js"></script>
+    <script>
+      addBackToTop({
+        diameter: 56,
+        // backgroundColor: 'rgb(255, 82, 82)',
+        backgroundColor: '#333',
+        textColor: '#fff'
+      })
+    </script>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
