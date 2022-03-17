@@ -1,6 +1,6 @@
 ## Questions
 
-For general support, direct your questions to [stotlefake](mailto:stotlefake@gmail.com).
+For general support, direct your questions to [stotlefake](mailto:stotlefake@gmail.com)
 
 The issue list for this project is exclusively for bug reports and feature requests.
 
